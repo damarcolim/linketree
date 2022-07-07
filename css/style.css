@@ -17,16 +17,18 @@
     body {
         background-color: var(--bg-color);
         font-family: 'Prompt', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 635px;
     }
     
     .container {
         width: 50%;
-        height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: auto;
         text-align: center;
     }
     
@@ -37,7 +39,6 @@
     .button {
         width: 50%;
         text-transform: uppercase;
-        font-family: 'Prompt', sans-serif;
         font-weight: bold;
         font-size: 15px;
     }
@@ -94,11 +95,15 @@
     }
     
     @media screen and (max-width: 767px) {
+        body {
+            margin: auto;
+            height: 800px;
+        }
         .container {
             width: 80%;
         }
         .avatar {
-            width: 70%;
+            width: 60%;
         }
         .perfil,
         .button {
